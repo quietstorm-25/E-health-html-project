@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.title{
+    color: gray;
+    font-size: 12px;
+}
+
+.hori{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topNav{
+    padding: 16px 68px 8px 68px;
+}
+
+#remove{
+    border: none !important;
+}
+
+.info{
+    margin-right: 24px;
+    padding-right: 28px;
+    border-right: 2px solid lightgray;
+}
+
+.info span{
+    color: rgb(54, 202, 86);
+}
+
+.brandlogo span{
+    background-color: rgb(54, 202, 86);
+    color: white;
+    padding: 5px;
+    border: none;
+    font-weight: 800;
+}
+
+.navItem{
+    list-style: none;
+    padding: 16px 18px;
+}
+
+.navItem a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navItem a:hover{
+    color: white;
+    background-color: rgb(81, 220, 111);
+}
+
+#app{
+    background-color: rgb(80, 213, 76);
+}
+
+#app a{
+    color: white !important;
+    text-decoration: none;
+}
+
+#home{
+    background-image: url(../images/slider3.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    background-color: #aa9696;
+}
+
+#button{
+    background-color: #484894;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+#about{
+    background-image: url(../images/about-bg.jpg);
+    background-size: cover;
+    align-items: center;
+    min-height: 90vh;
+    display: flex;
+    padding: 30px;
+}
+
+.topNav pre{
+    margin: 20px 0
+}
+
+#H{
+    font-size: 50px;
+}
+
+#H span{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border: none;
+    font-weight: 1000;;
+}
+
+.about1{
+    display: flex;
+}
+
+.about1 img{
+    height: 60px;
+    border-radius:50%;
+}
+
+.doctor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-topic{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.doctorspace{
+    margin-top: 20px;
+}
+
+.doctorspace hr{
+    margin: 20px 0;
+}
+
+.doctorspace p{
+    margin: 8px 0;
+}
+
+.news-image{
+    height: 245px;
+    width: 360px;
+}
+
+#appointment{
+    display: flex;
+}
+
+.formflex{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.form{
+     flex: 1;
+     padding: 30px;
+}
+
+.form h3{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forminput{
+    margin-bottom: 15px;
+}
+
+.form label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fdfef1;
+    border: 0.5px solid lightgray;
+    border-radius: 5px;
+}
+
+.form textarea, select{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e2e4dd;
+    border: 1px solid rgb(249, 246, 246);
+    border-radius: 5px;
+}
+
+.form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #5bd92d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact hr{
+    margin: 20px 0;
+}
+
+.contact p{
+    margin: 8px 0;
+}
+
+section{
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.footer{
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* mobile devices */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .hori{
+        flex-direction: column;
+    }
+    
+    .topNav{
+        padding: 16px 8px;
+    }
+
+    .mobile-hori{
+        flex-direction: row;
+        display: none;
+    }
+  }

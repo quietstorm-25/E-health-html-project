@@ -7,34 +7,40 @@
     <title>E-Health: innovative health care solution</title>
     <script src="https://kit.fontawesome.com/096bf9b3a1.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- Header section-->
     <header>
-        <div>
-            <h1>Welcome to E-Health Care Solution</h1>
+        <div class="hori topNav">
+            <h1 class="title">Welcome to E-Health Care Solution</h1>
 
-            <div>
-                <p> <span><i class="fa-solid fa-phone"></i></span> +2349022142294</p>
-                <p><span><i class="fa-solid fa-calendar"></i></span> 6:00 am - 10:00pm (Mon -Fri)</p>
-                <p><span><i class="fa-solid fa-at"></i></span> info@company.com</p>
+            <div class="hori title mobile-hori">
+                <p class="info"><span><i class="fa-solid fa-phone"></i></span> +2349022142294</p>
+                <p class="info"><span><i class="fa-solid fa-calendar"></i></span> 6:00 am - 10:00pm (Mon -Fri)</p>
+                <p id="remove" class="info"><span><i class="fa-solid fa-at"></i></span> info@company.com</p>
             </div>
         </div>
-        <nav>
-            <h3>E-Health</h3>
+
+        <nav class="hori topNav">
+            <h3 class="brandlogo"><span>E</span>-Health</h3>
 
             <!-- nav menu item-->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#doctor">Doctors</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#appointment">Make an Appointment</a></li>
+            <ul class="hori">
+                <li class="navItem"><a href="#home">Home</a></li>
+                <li class="navItem"><a href="#about">About us</a></li>
+                <li class="navItem"><a href="#doctor">Doctors</a></li>
+                <li class="navItem"><a href="#news">News</a></li>
+                <li class="navItem"><a href="#contact">Contact</a></li>
+                <li id="app" class="navItem"><a href="#appointment">Make an appointment</a></li>
             </ul>
         </nav>
-
     </header>
 
     <!-- Main section-->
@@ -42,126 +48,118 @@
         <!-- home section -->
         <section id="home">
             <div>
-                <p>Best Health Care Solution</p>
-                <p>Health Care At Your Door Step</p>
-                <button>Learn More</button>
+                <h4>Best Health Care Solution</h4>
+                <h1>Health Care At Your Door Step</h1>
+                <button id="button">Learn More</button>
             </div>
         </section>
         <!-- about us section -->
         <section id="about">
-            <!-- left part -->
-            <div>
-                <p>Welcome to Your Health Center</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nostrum autem qui praesentium,
-                    mollitia facilis doloribus necessitatibus, reprehenderit animi veritatis ut officia vitae
-                    repellendus voluptatem. Repellendus, odit. Adipisci, reprehenderit est.</p>
-                <div>
+            <div class="topNav">
+                <h3 id="H">Welcome to Your <span>H</span>ealth Center</h3>
+                <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, nostrum autem qui praesentium,
+mollitia facilis doloribus necessitatibus, reprehenderit animi veritatis ut officia vitae
+repellendus voluptatem. Repellendus, odit. Adipisci, reprehenderit est.</pre>
+                <div class="about1">
                     <img src="./images/author-image.jpg" alt="picture of author">
                     <div>
-                        <p>Dr. Neil Jackson</p>
-                        <p>General Doctor</p>
+                        <p><strong>Dr. Neil Jackson</strong></p>
+                        <p class="title">General Doctor</p>
                     </div>
                 </div>
-            </div>
-            <!-- right part -->
-            <div>
-                <img src="./images/about-bg.jpg" alt="picture">
             </div>
         </section>
 
         <!-- Doctor section -->
-        <section id="doctor">
-            <h3>Our Doctors</h3>
-            <div>
+        <section id="doctor" class="topNav">
+            <h2 class="section-topic">Our Doctors</h2>
+            <div class="doctor">
                 <div>
                     <img src="./images/team-image1.jpg" alt="Dr. Nate">
-
-                    <div>
+                    <div class="doctorspace">
                         <h4>Dr. Nate Baston</h4>
-                        <p>General Doctor</p>
-
-                        <hr />
-                        <p> <span><i class="fa-solid fa-phone"></i></span> +2349022142294</p>
-                        <p><span><i class="fa-solid fa-at"></i></span> general@company.com</p>
+                        <p class="title">General Doctor</p>
+                        <hr/>
+                        <p class="title"> <span><i class="fa-solid fa-phone"></i></span> +2349022142294</p>
+                        <p class="title"><span><i class="fa-solid fa-at"></i></span> general@company.com</p>
                     </div>
                 </div>
-            </div>
-            <div>
                 <div>
                     <img src="./images/team-image2.jpg" alt="">
-                    <div>
+                    <div class="doctorspace">
                         <h4>Jason Stewart</h4>
-                        <p>Pregnancy</p>
-
+                        <p class="title">Pregnancy</p>
                         <hr>
-                        <p> <span><i class="fa-solid fa-phone"></i></span> +2348037183799</p>
-                        <p><span><i class="fa-solid fa-at"></i></span> pregnancy@company.com</p>
+                        <p class="title"> <span><i class="fa-solid fa-phone"></i></span> +2348037183799</p>
+                        <p class="title"><span><i class="fa-solid fa-at"></i></span> pregnancy@company.com</p>
                     </div>
                 </div>
-            </div>
-            <div>
                 <div>
-                    <div>
-                        <img src="./images/team-image3.jpg" alt="picture">
-                        <div>
-                            <h4>Dr. Maisha Perry</h4>
-                            <p>cardiology</p>
-
-                            <hr>
-                            <p> <span><i class="fa-solid fa-phone"></i></span> +2348035841195</p>
-                            <p><span><i class="fa-solid fa-at"></i></span> cardio@company.com</p>
-                        </div>
+                    <img src="./images/team-image3.jpg" alt="picture">
+                    <div class="doctorspace">
+                        <h4>Dr. Maisha Perry</h4>
+                        <p class="title">cardiology</p>
+                        <hr>
+                        <p class="title"> <span><i class="fa-solid fa-phone"></i></span> +2348035841195</p>
+                        <p class="title"><span><i class="fa-solid fa-at"></i></span> cardio@company.com</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- News section -->
-        <section id="news">
-            <h3>Latest News</h3>
-            <div>
+        <section id="news" class="topNav">
+            <h3 class="section-topic">Latest News</h3>
+            <div class="doctor">
                 <div>
-                    <img src="./images/news-image1.jpg" alt="picture">
-                    <div>
-                        <p>March 08, 2025</p>
+                    <img src="./images/news-image1.jpg" alt="picture" class="news-image">
+                    <div class="doctorspace">
+                        <p class="title">March 08, 2025</p>
                         <h4>About Amazing Technology</h4>
-                        <p>Technology is amazing</p>
-                        <div>
+                        <p class="title">Technology is amazing</p>
+                        <hr>
+                        <div class="about1">
                             <img src="./images/author-image.jpg" alt="author picture">
                             <div>
-                               <p>Dr. Jerome Jackson</p>
-                               <p>CEO/Founder</p>
+                                <p><strong>Dr. Jerome Jackson</strong></p>
+                                <p class="title">CEO/Founder</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
                 <div>
-                    <img src="./images/news-image2.jpg" alt="news image">
                     <div>
-                        <p>March 08, 2025</p>
-                        <h4>Introducing a new healing process</h4>
-                        <p>Holywater healing is the new process</p>
-                        <div>
-                            <img src="./images/author-image.jpg" alt="author-image">
-                            <p>Jason Stewart</p>
-                            <p>General Director</p>
+                        <img src="./images/news-image2.jpg" alt="news image" class="news-image">
+                        <div class="doctorspace">
+                            <p class="title">March 08, 2025</p>
+                            <h4>Introducing a new healing process</h4>
+                            <p class="title">Holywater healing is the new process</p>
+                            <hr>
+                            <div class="about1">
+                                <img src="./images/author-image.jpg" alt="author-image">
+                                <div>
+                                    <p><strong>Jason Stewart</strong></p>
+                                    <p class="title">General Director</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
                 <div>
-                    <img src="./images/news-image3.jpg" alt="news image">
                     <div>
-                        <p>February 08, 2025</p>
-                        <h4>Review Annual Medical Research</h4>
-                        <p>Make sure you review medical research</p>
-                        <div>
-                            <img src="./images/author-image.jpg" alt="author-image">
-                            <p>Adrion Pique</p>
-                            <p>Online advertising</p>
+                        <img src="./images/news-image3.jpg" alt="news image" class="news-image">
+                        <div class="doctorspace">
+                            <p class="title">February 08, 2025</p>
+                            <h4>Review Annual Medical Research</h4>
+                            <p class="title">Make sure you review medical research</p>
+                            <hr>
+                            <div class="about1">
+                                <img src="./images/author-image.jpg" alt="author-image">
+                                <div>
+                                    <p><strong>Adrion Pique</strong></p>
+                                    <p class="title">Online advertising</p>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,23 +170,23 @@
         <section id="appointment">
             <!-- left side -->
             <div>
-                <img src="./images/appointment-image.jpg" alt="appointment image">
+                <img src="./images/appointment-image.jpg" alt="appointment image" width="800px" height="700px">
             </div>
             <!-- right side -->
-            <div>
+            <div class="form">
                 <h3>Make an appointment</h3>
                 <form action="#">
-                    <div>
+                    <div class="formflex">
                         <div>
-                            <label for="Name"> Name</label>
+                            <label for="Name">Name:</label>
                             <input type="text" placeholder="Full Name">
                         </div>
                         <div>
-                            <label for="Email">Email</label>
+                            <label for="Email">Email:</label>
                             <input type="email" placeholder="e.g johndoe@gexample.com">
                         </div>
                     </div>
-                    <div>
+                    <div class="name-form">
                         <div>
                             <label for="date"> Select Date</label>
                             <input type="date" placeholder="mm/dd/yyyy">
@@ -211,12 +209,12 @@
                         <textarea name="text" rows="10" cols="50" placeholder="Message"></textarea>
                     </div>
                     <div>
-                        <input type="button" value="Make an Appointment">
+                        <button type="submit"> Make an Appointment</button>
                     </div>
                 </form>
-
             </div>
         </section>
+
         <!-- contact section -->
         <section id="contact">
             <div class="mapouter">
@@ -245,51 +243,58 @@
                 </style>
             </div>
             <!-- left side -->
-            <div>
-                <h4>Contact Info</h4>
-                <p>Contact our phone number and email</p>
+            <div class="contact">
                 <div>
-                    <p><span><i class="fa-solid fa-phone"></i></span> +2349022142294</p>
-                    <p><span><i class="fa-solid fa-at"></i></span> info@company.com</p>
+                    <h4 class="section-topic">Contact Info</h4>
+                    <p class="title">Contact our phone number and email</p>
+                    <div>
+                        <p class="title"><span><i class="fa-solid fa-phone"></i></span> +2349022142294</p>
+                        <p class="title"><span><i class="fa-solid fa-envelope"></i></span> info@company.com</p>
+                    </div>
                 </div>
+                
                 <!-- middle side -->
                 <div>
-                    <h4>Latest News</h4>
-                    <div>
+                    <h4 class="section-topic">Latest News</h4>
+                    <div class="about1">
                         <img src="./images/news-image.jpg" alt="news picture">
                         <div>
-                            <p>Amazing Technology</p>
-                            <p>March 08 2025</p>
+                            <p><strong>Amazing Technology</strong></p>
+                            <p class="title">March 08 2025</p>
                         </div>
                     </div>
-                    <div>
+                    <hr>
+                    <div class="about1">
                         <img src="./images/news-image.jpg" alt="news picture">
                         <div>
-                            <p>New Healing Process</p>
-                            <p>February 20 2025</p>
+                            <p><strong>New Healing Process</strong></p>
+                            <p class="title">February 20 2025</p>
                         </div>
                     </div>
                 </div>
+
                 <!-- right side -->
                 <div>
-                    <h4>Opening Hours</h4>
-                    <p>Monday - Friday (06:00AM - 10:00PM)</p>
-                    <p>Saturday (09:00AM - 08:00PM)</p>
-                    <p>Sunday (Closed)</p>
-                    <div>
+                    <h4 class="section-topic">Opening Hours</h4>
+                    <p class="title">Monday - Friday (06:00AM - 10:00PM)</p>
+                    <p class="title">Saturday (09:00AM - 08:00PM)</p>
+                    <p class="title">Sunday (Closed)</p>
+                    <div class="social">
                         <i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-twitter"></i> <i
                             class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer section-->
-    <footer>
+    <footer class="footer">
         <p>Copyright &copy; 2017 Your Company | Designed by QS</p>
         <div>
-            <p>Laboratory Tests &nbsp; Departments &nbsp; Insurance &nbsp; Policy Careers</p>
+            <p>Laboratory Tests &nbsp; Departments &nbsp; Insurance Policy &nbsp; Careers</p>
         </div>
     </footer>
 </body>
+
 </html>
